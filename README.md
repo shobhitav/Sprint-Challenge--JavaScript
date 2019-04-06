@@ -29,14 +29,30 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+ .forEach method returns a list of the items, one after the other, going over the for loop, whereas .map() method returns the whole array of items in one go.
 
 2. What is the difference between a function and a method?
+Function is a piece of code when invoked can pass the arguments through its defined parameters and can return a value.
+Function inside an object is called a method. 
+All functions  associated with an object are called methods. 
 
 3. What is closure?
+When the inner/nested function can access the variables defined in the outer/enclosing function, even after the the outer/enclosing function finishes executing (i.e. variable value is preserved, closed in), the inner/nested function is called closure.
 
 4. Describe the four rules of the 'this' keyword.
-
+Four rules of 'this' keyword are :
+        1. Window binding
+        All global objects ,functions and variables automatically become members of window object.
+        So,when defined in global scope ,'this' refers to the global window object.This is called the window binding.
+        2. Implicit Binding
+        When a function is invoked on an object ,'this' refers to that particular object.
+        3. Explicit Binding
+        Whenever JavaScript’s call or apply or bind method is used, 'this' is explicitly defined.
+        4. New Binding
+        In a constructor function ,'this' refers to the object created at that time using new keyword.
+        
 5. Why do we need super() in an extended class?
+super() calls the parent constructor function and thus sets up the propeties and methods defined in parent class, so that the inherited child class can access all the properties and invoke all methods of the parent (base) class.
 
 ## Project Set up
 
